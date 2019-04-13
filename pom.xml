@@ -24,6 +24,7 @@
     </properties>
 
     <dependencies>
+        <!-- Mandatory dependency -->
         <dependency>
             <groupId>io.github.orpolyzos</groupId>
             <artifactId>spring-web-initializr</artifactId>
