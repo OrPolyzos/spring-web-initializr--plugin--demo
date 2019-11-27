@@ -1,4 +1,4 @@
-package ore.swip.demo.rest;
+package ore.swip.demo.controller.rest;
 
 import lombok.AllArgsConstructor;
 import ore.spring.web.initializr.controller.impl.RpRestController;

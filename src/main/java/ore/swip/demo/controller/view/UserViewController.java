@@ -1,4 +1,4 @@
-package ore.swip.demo.view;
+package ore.swip.demo.controller.view;
 
 import lombok.AllArgsConstructor;
 import ore.spring.web.initializr.controller.impl.RpViewController;
