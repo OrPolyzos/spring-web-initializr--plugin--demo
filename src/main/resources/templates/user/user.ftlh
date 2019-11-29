@@ -27,7 +27,7 @@
     <div class="panel panel-default">
         <div class="panel-heading"><a href="#create-resource-panel" data-toggle="collapse">Create</a></div>
         <div id="create-resource-panel" class="panel-body collapse">
-            <form action="/user" method="POST" id="user" name="user">
+            <form action="/view/user" method="POST" id="user" name="user">
 
                 <div class="form-group">
                     <label for="firstName">FirstName</label>
@@ -69,7 +69,7 @@
     <div class="panel panel-default">
         <div class="panel-heading"><a href="#search-resource-panel" data-toggle="collapse">Search</a></div>
         <div id="search-resource-panel" class="panel-body collapse">
-            <form action="/user/search" method="POST" id="userSearch" name="userSearch">
+            <form action="/view/user/search" method="POST" id="userSearch" name="userSearch">
                 <div class="attention">Specific search fields should be added here</div>
                 <div class="col-12 controls">
                     <span>
@@ -114,14 +114,14 @@
                                 <td>${resource.email!""}</td>
 
                                 <td>
-                                    <form action="/user/${resource.rpId}/edit" method="GET">
+                                    <form action="/view/user/${resource.rpId}/edit" method="GET">
                                         <button type="submit" class="btn btn-success">
                                             <span class="glyphicon glyphicon-cog"></span>
                                         </button>
                                     </form>
                                 </td>
                                 <td>
-                                    <form action="/user/${resource.rpId}/delete" method="POST">
+                                    <form action="/view/user/${resource.rpId}/delete" method="POST">
                                         <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">
                                             <span class="glyphicon glyphicon-remove"></span>
                                         </button>

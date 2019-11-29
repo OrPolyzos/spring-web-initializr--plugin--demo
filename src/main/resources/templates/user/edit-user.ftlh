@@ -27,7 +27,7 @@
     <div class="panel panel-default">
         <div class="panel-heading"><a href="#edit-resource-panel" data-toggle="collapse">Edit</a></div>
         <div id="edit-resource-panel" class="panel-body collapse in">
-            <form action="/user/${user.rpId}/edit" method="POST" id="user" name="user">
+            <form action="/view/user/${user.rpId}/edit" method="POST" id="user" name="user">
                 <div class="form-group">
                     <label for="id">ID</label>
                     <@spring.bind "user.rpId"/>

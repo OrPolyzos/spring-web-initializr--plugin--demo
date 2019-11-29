@@ -9,16 +9,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @AllArgsConstructor
-@RequestMapping("/user")
+@RequestMapping("/view/user")
 @Controller
 public class UserViewController implements RpViewController<User, Long> {
 
     private final UserService userService;
-
-    @Override
-    public Class<User> getRpClass() {
-        return User.class;
-    }
 
     @Override
     public NoDtoRpService<User, Long> getService() {
