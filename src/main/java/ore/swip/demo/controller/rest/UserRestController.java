@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @AllArgsConstructor
 @RequestMapping("/api/user")
 @Controller
-public class UserNoDtoRestController implements RpRestController<User, Long> {
+public class UserRestController implements RpRestController<User, Long> {
 
-    private final UserService userService;
+  private final UserService userService;
 
-    @Override
-    public ResourcePersistableService<User, Long> getService() {
-        return userService;
-    }
+  @Override
+  public ResourcePersistableService<User, Long> getService() {
+    return userService;
+  }
 }

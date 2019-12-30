@@ -11,10 +11,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService implements NoDtoRpService<User, Long> {
 
-    private final UserRepository userRepository;
+  private final UserRepository userRepository;
 
-    @Override
-    public CrudRepository<User, Long> getRepository() {
-        return userRepository;
-    }
+  @Override
+  public CrudRepository<User, Long> getRepository() {
+    return userRepository;
+  }
 }
